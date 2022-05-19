@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+    
+    <CENter><H1>LAB: 06 TASK_07</H1></CENter><br>
+    <button id="b1" onclick="run()" style="margin-top: 40px; margin-left: 40%; padding: 15px; background-color: rgb(250, 230, 250);">PRESS BUTTON FOR PERFORMING OPERATION</button>
+    <br>
+    <br><hr/>
+
+    <strong>EXPECTED OUTPUT : </strong>
+    <br>
+    <br>
+    <p id="p1"></p>
+
+    <script>
+        function run() {
+            let obj = {
+                my: 'Name',
+                is: 'Sannia-Amin',
+                the: 'Engineer'
+            }
+            var sentence = 'My ' + obj.my + ' is ' + obj.is + ' The ' + obj.the;
+            document.getElementById("p1").innerHTML = sentence;
+        }
+    </script>
+
+</body>

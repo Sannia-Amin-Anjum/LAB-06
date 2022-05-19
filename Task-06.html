@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <CENter><H1>LAB: 06 TASK_06</H1></CENter><br>
+    <button id="b1" onclick="run()" style="margin-top: 40px; margin-left: 40%; padding: 15px; background-color: rgb(250, 230, 250);">PRESS BUTTON FOR PERFORMING OPERATION</button>
+    <br>
+    <br><hr/>
+
+    <strong>EXPECTED OUTPUT : </strong>
+<br>
+<br>
+<p id="p1"></p>
+
+<script>
+
+function run() {
+    
+
+var recipe = {
+    Title : 'ALFERADO-PASTA',
+    Serves : 5,
+    Ingredients : ['MACRONI', 'CHICKEN', 'CAPSICUM', 'MILK', 'CORN', 'SALT','BUTTER']
+};
+
+Recipe(recipe);
+}
+
+function Recipe(recipe)
+{
+    console.log(recipe.Title);
+    document.getElementById("p1").innerHTML +='Title : ';
+document.getElementById("p1").innerHTML +=recipe.Title+'<br><br>';
+console.log("Serves: " + recipe.Serves);
+    document.getElementById("p1").innerHTML +='Serves : ';
+document.getElementById("p1").innerHTML +=recipe.Serves+'<br><br>';
+
+console.log("Ingredients: ");
+
+    document.getElementById("p1").innerHTML +='INGREDIENTS OF PASTA : <br><br>';
+for ( var i = 0; i < recipe.Ingredients.length; i++ ){
+
+    console.log(recipe.Ingredients[i]);
+    document.getElementById("p1").innerHTML +=recipe.Ingredients[i]+'<br><br>';
+
+}
+}
+
+</script>
+
+</body>
+
+</html>

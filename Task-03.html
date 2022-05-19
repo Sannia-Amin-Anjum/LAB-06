@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <CENter><H1>LAB: 06 TASK_03</H1></CENter><br>
+    <button id="b1" onclick="run()" style="margin-top: 40px; margin-left: 40%; padding: 15px; background-color: rgb(250, 230, 250);">PRESS BUTTON FOR PERFORMING OPERATION</button>
+    <br>
+    <br><hr/>
+
+    <strong>EXPECTED OUTPUT : </strong>
+
+    <br>
+    <br>
+    <p id="p1"></p>
+    <br>
+    <p id="p2"></p>
+
+    <script>
+
+        function run() {
+
+
+            var age = parseInt(prompt('YOR AGE IS: '));
+
+            (age >= 18) ? document.getElementById("p1").innerHTML = "Your are eligible to drive." : document.getElementById("p1").innerHTML = "Your are not eligible to drive.";
+
+        };
+
+    </script>
+
+</body>
+
+</html>

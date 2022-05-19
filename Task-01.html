@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <CENter><H1>LAB: 06 TASK_01</H1></CENter><br>
+    <button id="b1" onclick="run()" style="margin-top: 40px; margin-left: 40%; padding: 15px; background-color: rgb(250, 230, 250);">PRESS BUTTON FOR PERFORMING OPERATION</button>
+    <br>
+    <br><hr/>
+
+    <strong>EXPECTED OUTPUT : </strong>
+
+    <p id="p1"></p>
+
+    <script>
+ function run() {
+            document.getElementById("p1").innerHTML = "";
+            document.getElementById("p1").innerHTML = Math.pow(parseInt(prompt('Enter an integer whose power you want to Calculate')), 100);
+        }
+    </script>
+</body>
+
+</html>
